@@ -23,7 +23,7 @@ def getRangeFromEquation(race):
     sol2 = (-b-math.sqrt(d))/(2*a)
     print(f'The solution are {sol1} and {sol2}')
     print("And the range is: ")
-    print(math.floor(sol2)-math.ceil(sol1)+1)
+    print(math.ceil(sol2 - 1)-(math.floor(sol1 + 1)) + 1)
 print("\nScript Beggining")
 race=getRace(code)
 print(f"Race is:{race}")
